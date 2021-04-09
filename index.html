@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <section class="calculator-side">
+                <h2 class="title">Calculator</h2>
+                <div class="top">
+                    <div class="menu-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h1 class="calc-type">Standard</h1>
+                </div>
+                <div class="display-screen">
+                    <span class="output-value">0</span>
+                </div>
+                <nav class="calculator-nav">
+                    <ul class="memory-list">
+                        <li>MC</li>
+                        <li>MR</li>
+                        <li>M+</li>
+                        <li>M-</li>
+                        <li>MS</li>
+                    </ul>
+                </nav>
+                <div class="calculator">
+                    <div class="mark unique-mark operator">%</div>
+                    <div class="mark unique-mark operator">!</div>
+                    <div class="mark unique-mark" id="clear">C</div>
+                    <div class="mark unique-mark" id="delete">
+                        <img src="img/back-icon.png" alt="back-icon" width="30px">
+                    </div>
+                    <div class="mark unique-mark number">/</div>
+                    <div class="mark unique-mark operator">√</div>
+                    <div class="mark number">7</div>
+                    <div class="mark number">8</div>
+                    <div class="mark number">9</div>
+                    <div class="mark unique-mark number">*</div>
+                    <div class="mark unique-mark" id="square">x<span class="sup">2</span></div>
+                    <div class="mark number">4</div>
+                    <div class="mark number">5</div>
+                    <div class="mark number">6</div>
+                    <div class="mark unique-mark number">-</div>
+                    <div class="mark unique-mark operator" id="cube">x<span class="sup">3</span></div>
+                    <div class="mark number">1</div>
+                    <div class="mark number">2</div>
+                    <div class="mark number">3</div>
+                    <div class="mark unique-mark number">+</div>
+                    <div class="mark unique-mark" id="inversedNumber">
+                        <span>1</span>
+                        <span>/</span>
+                        <span>x</span>
+                    </div>
+                    <div class="mark unique-mark operator">±</div>
+                    <div class="mark number">0</div>
+                    <div class="mark unique-mark number">.</div>
+                    <div class="mark unique-mark" id="equal">=</div>
+                </div>
+            </section>
+            <section class="memory-side">
+                <div class="navbar">
+                    <p class="history active">history</p>
+                    <p class="memory">memory</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

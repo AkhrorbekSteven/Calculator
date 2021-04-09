@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Segoe TV Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe TV Regular'), url('../fonts/SegoeTVRegular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Segoe TV Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe TV Italic'), url('../fonts/SegoeTVItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Segoe TV Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe TV Bold'), url('../fonts/SegoeTVBold.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Segoe TV Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe TV Bold Italic'), url('../fonts/SegoeTVBoldIt.woff') format('woff');
+}

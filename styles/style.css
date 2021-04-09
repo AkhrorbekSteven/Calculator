@@ -1,0 +1,201 @@
+@import url('font.css');
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --light-grey: #E6E6E6;
+    --black: #000000;
+    --operators-color: #F0F0F0;
+    --numbers-color: #FAFAFA;
+    --operator-hover: #2993CC;
+    --hover-color: #E0E0E0;
+    --border-color: #c2c0c0;
+    --border-bottom-color: #2993CC;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--light-grey);
+}
+.wrapper {
+    display: flex;
+}
+.calculator-side {
+    width: 75vw;
+    min-height: 100vh;
+    position: relative;
+}
+.title {
+    font-size: 18px;
+    padding-left: 15px;
+    font-family: 'Segoe TV Regular';
+    font-weight: normal;
+    margin-top: 5px;
+}
+.top {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.menu-bar span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--black);
+}
+.calc-type {
+    font-family: 'Segoe TV Regular';
+    font-weight: normal;
+}
+.display-screen {
+    height: 145px;
+    margin-top: 20px;
+    position: relative;
+}
+.output-value {
+    position: absolute;
+    right: 2.5%;
+    bottom: 10px;
+    height: 100px;
+    font-family: 'Segoe TV Regular';
+    font-size: 80px;
+    line-height: 80px;
+    width: 95%;
+    text-align-last: right;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.output-value::-webkit-scrollbar {
+    width: 10px;
+}
+   
+.output-value::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+.output-value::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.memory-list {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.memory-list li {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe TV Regular';
+    margin-right: 40px;
+}
+/* .memory-list li:nth-child(3):hover:before {
+    display: block;
+} */
+.calculator {
+    padding: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+}
+.mark {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+} 
+.mark:nth-child(5n - 4) {
+    font-family: 'Segoe TV Italic';
+}
+.sup {
+    font-size: 20px;
+    position: absolute;
+    top: 22px;
+    right: 41%;
+    font-family: 'Segoe TV Regular';
+}
+.number {
+    background-color: var(--numbers-color);
+    font-family: 'Segoe TV Bold';
+    font-weight: bold;
+}
+.unique-mark {
+    background-color: var(--operators-color);
+    font-family: 'Segoe TV Regular';
+    font-weight: 300;
+    position: relative;
+}
+.mark:nth-child(5n):hover {
+    background-color: var(--operator-hover);
+    color: white;
+}
+.mark:not(.mark:nth-child(5n)):hover {
+    background-color: var(--light-grey);
+}
+.mark:nth-child(21)  {
+    position: relative;
+}
+.mark:nth-child(21) span:first-child {
+    position: absolute;
+    top: 12.5px;
+    left: 88px;
+}
+.mark:nth-child(21) span:last-child {
+    position: absolute;
+    bottom: 12.5px;
+    right: 88px;
+}
+.memory-side {
+    width: 25%;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+}
+.navbar p {
+    font-size: 18px;
+    font-family: 'Segoe TV Regular';
+    padding: 5px;
+}
+.active {
+    border-bottom: 3.5px solid var(--border-bottom-color);
+}
+.navbar p:first-child {
+    margin-right: 35px;
+}
